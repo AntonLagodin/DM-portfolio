@@ -1,5 +1,7 @@
 const header = document.querySelector("header");
 const btnToggle = document.querySelector(".btn--toggle")
+const hamburger = document.querySelector(".hamburger__menu")
+const links = document.querySelectorAll(".nav__link");
 
 function  stickyNavbar() {
     header.classList.toggle("scrolled", window.pageYOffset >0);
@@ -22,4 +24,9 @@ function changeTheme() {
 
 btnToggle.addEventListener("click", () => {
     changeTheme();
+});
+
+hamburger.addEventListener("click", () => {
+   document.body.classList.toggle("open");
+   document.body.classList.toggle("stopScrolling");
 });

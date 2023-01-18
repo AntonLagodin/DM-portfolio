@@ -14,9 +14,9 @@ window.addEventListener("scroll", stickyNavbar);
 function changeTheme() {
     if(!document.body.classList.contains("darktheme")){
         document.body.classList.add("darktheme");
-        btnToggle.classList.replace("uil-moon", "uil-sun");
+        return btnToggle.classList.replace("uil-moon", "uil-sun");
     }
-    else {
+    {
         document.body.classList.remove("darktheme");
         btnToggle.classList.replace("uil-sun", "uil-moon");
     }

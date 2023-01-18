@@ -1,0 +1,44 @@
+:root {
+    --selection-color: hsla(257, 100%, 60%, 0.9);
+    --main-color-1: hsl(257, 100%, 60%);
+    --main-color-dark-1: hsl(257, 69%, 50%);
+    --main-color-2: hsl(47, 100%, 61%);
+    --main-color-dark-2: hsl(47, 82%, 55%);
+    --section-padding: 7rem;
+    --white-color: #ffffff;
+    --margin-xl: 3.5rem;
+    --margin-l: 2rem;
+    --margin-d: 1.5rem;
+    --margin-s: 1rem;
+    --margin-xs: 0.8rem;
+    --padding-xxl: 5rem;
+    --padding-xl: 4rem;
+    --padding-l: 3.5rem;
+    --padding-d: 1.5rem;
+    --padding-s: 1rem;
+    --padding-xs: 0.5rem;
+}
+
+body {
+    --bg-color: hsl(257, 100%, 97%);
+    --bg-color-1: hsl(257, 100%, 95.5%);
+    --bg-color-2: #fff;
+    --bg-color-3: hsl(257, 100%, 98%);
+    --bg-color-transparent: hsla(0, 0%, 100%, 0.6);
+    --heading-color: hsl(257, 61%, 24%);
+    --text-color: hsl(257, 17%, 63%);
+}
+
+body.darktheme {
+    --bg-color: hsl(257, 19%, 15%);
+    --bg-color-1: hsl(257, 21%, 11%);
+    --bg-color-2: hsl(257, 23%, 19%);
+    --bg-color-3: hsl(257, 23%, 24%);
+    --bg-color-transparent: hsla(257, 23%, 19%, 0.6);
+    --heading-color: hsl(257, 100%, 95%);
+    --text-color: hsl(257, 14%, 51%);
+}
+
+body.darktheme .btn--toggle {
+    background-color: var(--bg-color-3);
+}
